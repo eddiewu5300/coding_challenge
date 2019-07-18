@@ -1,0 +1,1489 @@
+2019-07-16 18:40:27 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-07-16 18:40:28 INFO  SparkContext:54 - Running Spark version 2.3.2
+2019-07-16 18:40:28 INFO  SparkContext:54 - Submitted application: WordCount
+2019-07-16 18:40:28 INFO  SecurityManager:54 - Changing view acls to: eddiewu
+2019-07-16 18:40:28 INFO  SecurityManager:54 - Changing modify acls to: eddiewu
+2019-07-16 18:40:28 INFO  SecurityManager:54 - Changing view acls groups to: 
+2019-07-16 18:40:28 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2019-07-16 18:40:28 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(eddiewu); groups with view permissions: Set(); users  with modify permissions: Set(eddiewu); groups with modify permissions: Set()
+2019-07-16 18:40:29 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 53050.
+2019-07-16 18:40:29 INFO  SparkEnv:54 - Registering MapOutputTracker
+2019-07-16 18:40:29 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2019-07-16 18:40:29 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2019-07-16 18:40:29 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2019-07-16 18:40:29 INFO  DiskBlockManager:54 - Created local directory at /private/var/folders/wp/3xdlkkwx7r1crkk48zym3sdm0000gn/T/blockmgr-280fb647-b06a-4690-8e3f-b54b620383ae
+2019-07-16 18:40:29 INFO  MemoryStore:54 - MemoryStore started with capacity 366.3 MB
+2019-07-16 18:40:29 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2019-07-16 18:40:29 INFO  log:192 - Logging initialized @3861ms
+2019-07-16 18:40:29 INFO  Server:351 - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2019-07-16 18:40:29 INFO  Server:419 - Started @4000ms
+2019-07-16 18:40:29 INFO  AbstractConnector:278 - Started ServerConnector@28b7686a{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2019-07-16 18:40:29 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@54632555{/jobs,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5c973828{/jobs/json,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6729f478{/jobs/job,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@12c730e4{/jobs/job/json,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@77f40cec{/stages,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5fd6ac5e{/stages/json,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@ed3e944{/stages/stage,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@18a2a510{/stages/stage/json,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@9aaf689{/stages/pool,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6931f43e{/stages/pool/json,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7947b46e{/storage,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@74c00473{/storage/json,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2a00badc{/storage/rdd,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4cf62ba6{/storage/rdd/json,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@8d60292{/environment,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7cc16c67{/environment/json,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5338ef79{/executors,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2e6e55a3{/executors/json,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1694106e{/executors/threadDump,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6141f48f{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@75968cf9{/static,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5bae9bc9{/,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4c662764{/api,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4b4cdeb7{/jobs/job/kill,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@43187dca{/stages/stage/kill,null,AVAILABLE,@Spark}
+2019-07-16 18:40:29 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://192.168.128.82:4040
+2019-07-16 18:40:30 INFO  SparkContext:54 - Added file file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py at file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py with timestamp 1563316830433
+2019-07-16 18:40:30 INFO  Utils:54 - Copying /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py to /private/var/folders/wp/3xdlkkwx7r1crkk48zym3sdm0000gn/T/spark-deb3bb6b-a131-42cb-8b12-01b1fafe8687/userFiles-356a424a-24cc-4205-9801-9e4221f354fd/indexing.py
+2019-07-16 18:40:30 INFO  Executor:54 - Starting executor ID driver on host localhost
+2019-07-16 18:40:30 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 53052.
+2019-07-16 18:40:30 INFO  NettyBlockTransferService:54 - Server created on 192.168.128.82:53052
+2019-07-16 18:40:30 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2019-07-16 18:40:30 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, 192.168.128.82, 53052, None)
+2019-07-16 18:40:30 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 192.168.128.82:53052 with 366.3 MB RAM, BlockManagerId(driver, 192.168.128.82, 53052, None)
+2019-07-16 18:40:30 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, 192.168.128.82, 53052, None)
+2019-07-16 18:40:30 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, 192.168.128.82, 53052, None)
+2019-07-16 18:40:31 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@25adca36{/metrics/json,null,AVAILABLE,@Spark}
+##################################################
+2019-07-16 18:40:32 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 237.5 KB, free 366.1 MB)
+2019-07-16 18:40:32 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 23.2 KB, free 366.0 MB)
+2019-07-16 18:40:32 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.3 MB)
+2019-07-16 18:40:32 INFO  SparkContext:54 - Created broadcast 0 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:33 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:33 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 237.6 KB, free 365.8 MB)
+2019-07-16 18:40:33 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 23.2 KB, free 365.8 MB)
+2019-07-16 18:40:33 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.3 MB)
+2019-07-16 18:40:33 INFO  SparkContext:54 - Created broadcast 1 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:33 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:33 INFO  MemoryStore:54 - Block broadcast_2 stored as values in memory (estimated size 237.6 KB, free 365.6 MB)
+2019-07-16 18:40:33 INFO  MemoryStore:54 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 23.2 KB, free 365.5 MB)
+2019-07-16 18:40:33 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.2 MB)
+2019-07-16 18:40:33 INFO  SparkContext:54 - Created broadcast 2 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:33 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:33 INFO  MemoryStore:54 - Block broadcast_3 stored as values in memory (estimated size 237.6 KB, free 365.3 MB)
+2019-07-16 18:40:33 INFO  MemoryStore:54 - Block broadcast_3_piece0 stored as bytes in memory (estimated size 23.2 KB, free 365.3 MB)
+2019-07-16 18:40:33 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.2 MB)
+2019-07-16 18:40:33 INFO  SparkContext:54 - Created broadcast 3 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:33 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:33 INFO  MemoryStore:54 - Block broadcast_4 stored as values in memory (estimated size 237.6 KB, free 365.0 MB)
+2019-07-16 18:40:33 INFO  MemoryStore:54 - Block broadcast_4_piece0 stored as bytes in memory (estimated size 23.2 KB, free 365.0 MB)
+2019-07-16 18:40:33 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.2 MB)
+2019-07-16 18:40:33 INFO  SparkContext:54 - Created broadcast 4 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:33 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:33 INFO  MemoryStore:54 - Block broadcast_5 stored as values in memory (estimated size 237.6 KB, free 364.8 MB)
+2019-07-16 18:40:33 INFO  MemoryStore:54 - Block broadcast_5_piece0 stored as bytes in memory (estimated size 23.2 KB, free 364.8 MB)
+2019-07-16 18:40:33 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.2 MB)
+2019-07-16 18:40:33 INFO  SparkContext:54 - Created broadcast 5 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:33 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:33 INFO  MemoryStore:54 - Block broadcast_6 stored as values in memory (estimated size 237.6 KB, free 364.5 MB)
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_6_piece0 stored as bytes in memory (estimated size 23.2 KB, free 364.5 MB)
+2019-07-16 18:40:34 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.1 MB)
+2019-07-16 18:40:34 INFO  SparkContext:54 - Created broadcast 6 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:34 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_7 stored as values in memory (estimated size 237.6 KB, free 364.3 MB)
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_7_piece0 stored as bytes in memory (estimated size 23.2 KB, free 364.3 MB)
+2019-07-16 18:40:34 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.1 MB)
+2019-07-16 18:40:34 INFO  SparkContext:54 - Created broadcast 7 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:34 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_8 stored as values in memory (estimated size 237.6 KB, free 364.0 MB)
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_8_piece0 stored as bytes in memory (estimated size 23.2 KB, free 364.0 MB)
+2019-07-16 18:40:34 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.1 MB)
+2019-07-16 18:40:34 INFO  SparkContext:54 - Created broadcast 8 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:34 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_9 stored as values in memory (estimated size 237.6 KB, free 363.8 MB)
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_9_piece0 stored as bytes in memory (estimated size 23.2 KB, free 363.8 MB)
+2019-07-16 18:40:34 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.1 MB)
+2019-07-16 18:40:34 INFO  SparkContext:54 - Created broadcast 9 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:34 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_10 stored as values in memory (estimated size 237.6 KB, free 363.5 MB)
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_10_piece0 stored as bytes in memory (estimated size 23.2 KB, free 363.5 MB)
+2019-07-16 18:40:34 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.1 MB)
+2019-07-16 18:40:34 INFO  SparkContext:54 - Created broadcast 10 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:34 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_11 stored as values in memory (estimated size 237.6 KB, free 363.3 MB)
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_11_piece0 stored as bytes in memory (estimated size 23.2 KB, free 363.2 MB)
+2019-07-16 18:40:34 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.0 MB)
+2019-07-16 18:40:34 INFO  SparkContext:54 - Created broadcast 11 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:34 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_12 stored as values in memory (estimated size 237.6 KB, free 363.0 MB)
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_12_piece0 stored as bytes in memory (estimated size 23.2 KB, free 363.0 MB)
+2019-07-16 18:40:34 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.0 MB)
+2019-07-16 18:40:34 INFO  SparkContext:54 - Created broadcast 12 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:34 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_13 stored as values in memory (estimated size 237.6 KB, free 362.8 MB)
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_13_piece0 stored as bytes in memory (estimated size 23.2 KB, free 362.7 MB)
+2019-07-16 18:40:34 INFO  BlockManagerInfo:54 - Added broadcast_13_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.0 MB)
+2019-07-16 18:40:34 INFO  SparkContext:54 - Created broadcast 13 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:34 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_14 stored as values in memory (estimated size 237.6 KB, free 362.5 MB)
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_14_piece0 stored as bytes in memory (estimated size 23.2 KB, free 362.5 MB)
+2019-07-16 18:40:34 INFO  BlockManagerInfo:54 - Added broadcast_14_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 366.0 MB)
+2019-07-16 18:40:34 INFO  SparkContext:54 - Created broadcast 14 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:34 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:34 INFO  MemoryStore:54 - Block broadcast_15 stored as values in memory (estimated size 237.6 KB, free 362.2 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_15_piece0 stored as bytes in memory (estimated size 23.2 KB, free 362.2 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_15_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.9 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 15 from textFile at NativeMethodAccessorImpl.java:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_16 stored as values in memory (estimated size 237.6 KB, free 362.0 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_16_piece0 stored as bytes in memory (estimated size 23.2 KB, free 362.0 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_16_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.9 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 16 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_17 stored as values in memory (estimated size 237.6 KB, free 361.7 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_17_piece0 stored as bytes in memory (estimated size 23.2 KB, free 361.7 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_17_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.9 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 17 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_18 stored as values in memory (estimated size 237.6 KB, free 361.5 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_18_piece0 stored as bytes in memory (estimated size 23.2 KB, free 361.5 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_18_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.9 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 18 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_19 stored as values in memory (estimated size 237.6 KB, free 361.2 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_19_piece0 stored as bytes in memory (estimated size 23.2 KB, free 361.2 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_19_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.8 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 19 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_20 stored as values in memory (estimated size 237.6 KB, free 361.0 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_20_piece0 stored as bytes in memory (estimated size 23.2 KB, free 361.0 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_20_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.8 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 20 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_21 stored as values in memory (estimated size 237.6 KB, free 360.7 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_21_piece0 stored as bytes in memory (estimated size 23.2 KB, free 360.7 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_21_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.8 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 21 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_22 stored as values in memory (estimated size 237.6 KB, free 360.5 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_22_piece0 stored as bytes in memory (estimated size 23.2 KB, free 360.4 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_22_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.8 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 22 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_23 stored as values in memory (estimated size 237.6 KB, free 360.2 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_23_piece0 stored as bytes in memory (estimated size 23.2 KB, free 360.2 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_23_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.8 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 23 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_24 stored as values in memory (estimated size 237.6 KB, free 360.0 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_24_piece0 stored as bytes in memory (estimated size 23.2 KB, free 359.9 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_24_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.7 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 24 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_25 stored as values in memory (estimated size 237.6 KB, free 359.7 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_25_piece0 stored as bytes in memory (estimated size 23.2 KB, free 359.7 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_25_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.7 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 25 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_26 stored as values in memory (estimated size 237.6 KB, free 359.4 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_26_piece0 stored as bytes in memory (estimated size 23.2 KB, free 359.4 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_26_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.7 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 26 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_27 stored as values in memory (estimated size 237.6 KB, free 359.2 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_27_piece0 stored as bytes in memory (estimated size 23.2 KB, free 359.2 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_27_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.7 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 27 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_28 stored as values in memory (estimated size 237.6 KB, free 358.9 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_28_piece0 stored as bytes in memory (estimated size 23.2 KB, free 358.9 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_28_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.6 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 28 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_29 stored as values in memory (estimated size 237.6 KB, free 358.7 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_29_piece0 stored as bytes in memory (estimated size 23.2 KB, free 358.7 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_29_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.6 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 29 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_30 stored as values in memory (estimated size 237.6 KB, free 358.4 MB)
+2019-07-16 18:40:35 INFO  MemoryStore:54 - Block broadcast_30_piece0 stored as bytes in memory (estimated size 23.2 KB, free 358.4 MB)
+2019-07-16 18:40:35 INFO  BlockManagerInfo:54 - Added broadcast_30_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.6 MB)
+2019-07-16 18:40:35 INFO  SparkContext:54 - Created broadcast 30 from textFile at <unknown>:0
+2019-07-16 18:40:35 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_31 stored as values in memory (estimated size 237.6 KB, free 358.2 MB)
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_31_piece0 stored as bytes in memory (estimated size 23.2 KB, free 358.2 MB)
+2019-07-16 18:40:36 INFO  BlockManagerInfo:54 - Added broadcast_31_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.6 MB)
+2019-07-16 18:40:36 INFO  SparkContext:54 - Created broadcast 31 from textFile at <unknown>:0
+2019-07-16 18:40:36 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_32 stored as values in memory (estimated size 237.6 KB, free 357.9 MB)
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_32_piece0 stored as bytes in memory (estimated size 23.2 KB, free 357.9 MB)
+2019-07-16 18:40:36 INFO  BlockManagerInfo:54 - Added broadcast_32_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.6 MB)
+2019-07-16 18:40:36 INFO  SparkContext:54 - Created broadcast 32 from textFile at <unknown>:0
+2019-07-16 18:40:36 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_33 stored as values in memory (estimated size 237.6 KB, free 357.7 MB)
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_33_piece0 stored as bytes in memory (estimated size 23.2 KB, free 357.6 MB)
+2019-07-16 18:40:36 INFO  BlockManagerInfo:54 - Added broadcast_33_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.5 MB)
+2019-07-16 18:40:36 INFO  SparkContext:54 - Created broadcast 33 from textFile at <unknown>:0
+2019-07-16 18:40:36 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_34 stored as values in memory (estimated size 237.6 KB, free 357.4 MB)
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_34_piece0 stored as bytes in memory (estimated size 23.2 KB, free 357.4 MB)
+2019-07-16 18:40:36 INFO  BlockManagerInfo:54 - Added broadcast_34_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.5 MB)
+2019-07-16 18:40:36 INFO  SparkContext:54 - Created broadcast 34 from textFile at <unknown>:0
+2019-07-16 18:40:36 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_35 stored as values in memory (estimated size 237.6 KB, free 357.2 MB)
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_35_piece0 stored as bytes in memory (estimated size 23.2 KB, free 357.1 MB)
+2019-07-16 18:40:36 INFO  BlockManagerInfo:54 - Added broadcast_35_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.5 MB)
+2019-07-16 18:40:36 INFO  SparkContext:54 - Created broadcast 35 from textFile at <unknown>:0
+2019-07-16 18:40:36 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_36 stored as values in memory (estimated size 237.6 KB, free 356.9 MB)
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_36_piece0 stored as bytes in memory (estimated size 23.2 KB, free 356.9 MB)
+2019-07-16 18:40:36 INFO  BlockManagerInfo:54 - Added broadcast_36_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.5 MB)
+2019-07-16 18:40:36 INFO  SparkContext:54 - Created broadcast 36 from textFile at <unknown>:0
+2019-07-16 18:40:36 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_37 stored as values in memory (estimated size 237.6 KB, free 356.6 MB)
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_37_piece0 stored as bytes in memory (estimated size 23.2 KB, free 356.6 MB)
+2019-07-16 18:40:36 INFO  BlockManagerInfo:54 - Added broadcast_37_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.4 MB)
+2019-07-16 18:40:36 INFO  SparkContext:54 - Created broadcast 37 from textFile at <unknown>:0
+2019-07-16 18:40:36 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_38 stored as values in memory (estimated size 237.6 KB, free 356.4 MB)
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_38_piece0 stored as bytes in memory (estimated size 23.2 KB, free 356.4 MB)
+2019-07-16 18:40:36 INFO  BlockManagerInfo:54 - Added broadcast_38_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.4 MB)
+2019-07-16 18:40:36 INFO  SparkContext:54 - Created broadcast 38 from textFile at <unknown>:0
+2019-07-16 18:40:36 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_39 stored as values in memory (estimated size 237.6 KB, free 356.1 MB)
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_39_piece0 stored as bytes in memory (estimated size 23.2 KB, free 356.1 MB)
+2019-07-16 18:40:36 INFO  BlockManagerInfo:54 - Added broadcast_39_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.4 MB)
+2019-07-16 18:40:36 INFO  SparkContext:54 - Created broadcast 39 from textFile at <unknown>:0
+2019-07-16 18:40:36 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_40 stored as values in memory (estimated size 237.6 KB, free 355.9 MB)
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_40_piece0 stored as bytes in memory (estimated size 23.2 KB, free 355.9 MB)
+2019-07-16 18:40:36 INFO  BlockManagerInfo:54 - Added broadcast_40_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.4 MB)
+2019-07-16 18:40:36 INFO  SparkContext:54 - Created broadcast 40 from textFile at <unknown>:0
+2019-07-16 18:40:36 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_41 stored as values in memory (estimated size 237.6 KB, free 355.6 MB)
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_41_piece0 stored as bytes in memory (estimated size 23.2 KB, free 355.6 MB)
+2019-07-16 18:40:36 INFO  BlockManagerInfo:54 - Added broadcast_41_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.3 MB)
+2019-07-16 18:40:36 INFO  SparkContext:54 - Created broadcast 41 from textFile at <unknown>:0
+2019-07-16 18:40:36 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_42 stored as values in memory (estimated size 237.6 KB, free 355.4 MB)
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_42_piece0 stored as bytes in memory (estimated size 23.2 KB, free 355.3 MB)
+2019-07-16 18:40:36 INFO  BlockManagerInfo:54 - Added broadcast_42_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.3 MB)
+2019-07-16 18:40:36 INFO  SparkContext:54 - Created broadcast 42 from textFile at <unknown>:0
+2019-07-16 18:40:36 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_43 stored as values in memory (estimated size 237.6 KB, free 355.1 MB)
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_43_piece0 stored as bytes in memory (estimated size 23.2 KB, free 355.1 MB)
+2019-07-16 18:40:36 INFO  BlockManagerInfo:54 - Added broadcast_43_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.3 MB)
+2019-07-16 18:40:36 INFO  SparkContext:54 - Created broadcast 43 from textFile at <unknown>:0
+2019-07-16 18:40:36 INFO  FileInputFormat:249 - Total input paths to process : 1
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_44 stored as values in memory (estimated size 237.6 KB, free 354.9 MB)
+2019-07-16 18:40:36 INFO  MemoryStore:54 - Block broadcast_44_piece0 stored as bytes in memory (estimated size 23.2 KB, free 354.8 MB)
+2019-07-16 18:40:36 INFO  BlockManagerInfo:54 - Added broadcast_44_piece0 in memory on 192.168.128.82:53052 (size: 23.2 KB, free: 365.3 MB)
+2019-07-16 18:40:36 INFO  SparkContext:54 - Created broadcast 44 from textFile at <unknown>:0
+2019-07-16 18:40:36 INFO  FileInputFormat:249 - Total input paths to process : 1
+##################################################
+2019-07-16 18:40:37 INFO  SparkContext:54 - Starting job: zipWithIndex at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:42
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 93 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 195 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 57 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 255 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 111 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 201 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 237 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 99 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 153 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 9 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 81 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 249 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 207 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 219 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 231 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 27 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 63 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 21 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 261 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 177 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 33 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 51 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 129 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 15 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 141 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 183 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 39 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 75 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 243 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 159 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 225 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 117 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 3 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 123 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 165 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 213 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 147 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 135 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 69 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 105 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 171 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 267 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 45 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 87 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 189 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Registering RDD 317 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:39)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Got job 0 (zipWithIndex at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:42) with 45 output partitions
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Final stage: ResultStage 46 (zipWithIndex at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:42)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 45)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 45)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 0 (PairwiseRDD[93] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_45 stored as values in memory (estimated size 10.5 KB, free 354.8 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_45_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.8 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_45_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.3 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 45 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 0 (PairwiseRDD[93] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 0.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 1 (PairwiseRDD[195] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_46 stored as values in memory (estimated size 10.5 KB, free 354.8 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_46_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.8 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_46_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.3 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 46 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 1 (PairwiseRDD[195] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 1.0 with 1 tasks
+2019-07-16 18:40:37 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 2 (PairwiseRDD[57] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_47 stored as values in memory (estimated size 10.5 KB, free 354.8 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_47_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.8 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_47_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.3 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 47 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 2 (PairwiseRDD[57] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 2.0 with 1 tasks
+2019-07-16 18:40:37 INFO  Executor:54 - Running task 0.0 in stage 0.0 (TID 0)
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 3 (PairwiseRDD[255] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_48 stored as values in memory (estimated size 10.5 KB, free 354.8 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_48_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.8 MB)
+2019-07-16 18:40:37 INFO  Executor:54 - Fetching file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py with timestamp 1563316830433
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_48_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.3 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 48 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 3 (PairwiseRDD[255] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 3.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 4 (PairwiseRDD[111] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_49 stored as values in memory (estimated size 10.5 KB, free 354.8 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_49_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.8 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_49_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 49 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 4 (PairwiseRDD[111] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 4.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 5 (PairwiseRDD[201] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_50 stored as values in memory (estimated size 10.5 KB, free 354.7 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_50_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.7 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_50_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 50 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 5 (PairwiseRDD[201] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 5.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 6 (PairwiseRDD[237] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_51 stored as values in memory (estimated size 10.5 KB, free 354.7 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_51_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.7 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_51_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 51 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 6 (PairwiseRDD[237] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 6.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 7 (PairwiseRDD[99] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_52 stored as values in memory (estimated size 10.5 KB, free 354.7 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_52_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.7 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_52_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 52 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 7 (PairwiseRDD[99] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 7.0 with 1 tasks
+2019-07-16 18:40:37 INFO  Utils:54 - /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py has been previously copied to /private/var/folders/wp/3xdlkkwx7r1crkk48zym3sdm0000gn/T/spark-deb3bb6b-a131-42cb-8b12-01b1fafe8687/userFiles-356a424a-24cc-4205-9801-9e4221f354fd/indexing.py
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 8 (PairwiseRDD[153] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_53 stored as values in memory (estimated size 10.5 KB, free 354.7 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_53_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.7 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_53_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 53 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 8 (PairwiseRDD[153] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 8.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 9 (PairwiseRDD[9] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_54 stored as values in memory (estimated size 10.5 KB, free 354.7 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_54_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.7 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_54_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 54 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 9 (PairwiseRDD[9] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 9.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 10 (PairwiseRDD[81] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_55 stored as values in memory (estimated size 10.5 KB, free 354.7 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_55_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.7 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_55_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 55 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 10 (PairwiseRDD[81] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 10.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 11 (PairwiseRDD[249] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_56 stored as values in memory (estimated size 10.5 KB, free 354.6 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_56_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.6 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_56_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 56 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 11 (PairwiseRDD[249] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 11.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 12 (PairwiseRDD[207] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_57 stored as values in memory (estimated size 10.5 KB, free 354.6 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_57_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.6 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_57_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 57 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 12 (PairwiseRDD[207] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 12.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 13 (PairwiseRDD[219] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_58 stored as values in memory (estimated size 10.5 KB, free 354.6 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_58_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.6 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_58_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 58 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 13 (PairwiseRDD[219] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 13.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 14 (PairwiseRDD[231] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_59 stored as values in memory (estimated size 10.5 KB, free 354.6 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_59_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.6 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_59_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 59 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 14 (PairwiseRDD[231] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 14.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 15 (PairwiseRDD[27] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_60 stored as values in memory (estimated size 10.5 KB, free 354.6 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_60_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.6 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_60_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 60 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 15 (PairwiseRDD[27] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 15.0 with 1 tasks
+2019-07-16 18:40:37 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/28:0+128220
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 16 (PairwiseRDD[63] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_61 stored as values in memory (estimated size 10.5 KB, free 354.6 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_61_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.6 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_61_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 61 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 16 (PairwiseRDD[63] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 16.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 17 (PairwiseRDD[21] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_62 stored as values in memory (estimated size 10.5 KB, free 354.5 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_62_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.5 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_62_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 62 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 17 (PairwiseRDD[21] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 17.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 18 (PairwiseRDD[261] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_63 stored as values in memory (estimated size 10.5 KB, free 354.5 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_63_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.5 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_63_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 63 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 18 (PairwiseRDD[261] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 18.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 19 (PairwiseRDD[177] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_64 stored as values in memory (estimated size 10.5 KB, free 354.5 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_64_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.5 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_64_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 64 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 19 (PairwiseRDD[177] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 19.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 20 (PairwiseRDD[33] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_65 stored as values in memory (estimated size 10.5 KB, free 354.5 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_65_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.5 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_65_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 65 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 20 (PairwiseRDD[33] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 20.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 21 (PairwiseRDD[51] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_66 stored as values in memory (estimated size 10.5 KB, free 354.5 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_66_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.5 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_66_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 66 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 21 (PairwiseRDD[51] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 21.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 22 (PairwiseRDD[129] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_67 stored as values in memory (estimated size 10.5 KB, free 354.5 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_67_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.4 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_67_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 67 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 22 (PairwiseRDD[129] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 22.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 23 (PairwiseRDD[15] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_68 stored as values in memory (estimated size 10.5 KB, free 354.4 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_68_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.4 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_68_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 68 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 23 (PairwiseRDD[15] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 23.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 24 (PairwiseRDD[141] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_69 stored as values in memory (estimated size 10.5 KB, free 354.4 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_69_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.4 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_69_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 69 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 24 (PairwiseRDD[141] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 24.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 25 (PairwiseRDD[183] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_70 stored as values in memory (estimated size 10.5 KB, free 354.4 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_70_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.4 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_70_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 70 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 25 (PairwiseRDD[183] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 25.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 26 (PairwiseRDD[39] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_71 stored as values in memory (estimated size 10.5 KB, free 354.4 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_71_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.4 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_71_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 71 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 26 (PairwiseRDD[39] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 26.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 27 (PairwiseRDD[75] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_72 stored as values in memory (estimated size 10.5 KB, free 354.4 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_72_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.4 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_72_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 72 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 27 (PairwiseRDD[75] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 27.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 28 (PairwiseRDD[243] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_73 stored as values in memory (estimated size 10.5 KB, free 354.4 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_73_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.3 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_73_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 73 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 28 (PairwiseRDD[243] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 28.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 29 (PairwiseRDD[159] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_74 stored as values in memory (estimated size 10.5 KB, free 354.3 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_74_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.3 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_74_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 74 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 29 (PairwiseRDD[159] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 29.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 30 (PairwiseRDD[225] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_75 stored as values in memory (estimated size 10.5 KB, free 354.3 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_75_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.3 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_75_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 75 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 30 (PairwiseRDD[225] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 30.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 31 (PairwiseRDD[117] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_76 stored as values in memory (estimated size 10.5 KB, free 354.3 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_76_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.3 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_76_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 76 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 31 (PairwiseRDD[117] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 31.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 32 (PairwiseRDD[3] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_77 stored as values in memory (estimated size 10.5 KB, free 354.3 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_77_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.3 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_77_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 77 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 32 (PairwiseRDD[3] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 32.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 33 (PairwiseRDD[123] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_78 stored as values in memory (estimated size 10.5 KB, free 354.3 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_78_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.3 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_78_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 78 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 33 (PairwiseRDD[123] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 33.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 34 (PairwiseRDD[165] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_79 stored as values in memory (estimated size 10.5 KB, free 354.3 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_79_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.2 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_79_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 79 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 34 (PairwiseRDD[165] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 34.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 35 (PairwiseRDD[213] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_80 stored as values in memory (estimated size 10.5 KB, free 354.2 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_80_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.2 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_80_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 80 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 35 (PairwiseRDD[213] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 35.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 36 (PairwiseRDD[147] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_81 stored as values in memory (estimated size 10.5 KB, free 354.2 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_81_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.2 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_81_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 81 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 36 (PairwiseRDD[147] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 36.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 37 (PairwiseRDD[135] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_82 stored as values in memory (estimated size 10.5 KB, free 354.2 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_82_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.2 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_82_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 82 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 37 (PairwiseRDD[135] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 37.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 38 (PairwiseRDD[69] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_83 stored as values in memory (estimated size 10.5 KB, free 354.2 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_83_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.2 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_83_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 83 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 38 (PairwiseRDD[69] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 38.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 39 (PairwiseRDD[105] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_84 stored as values in memory (estimated size 10.5 KB, free 354.2 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_84_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.2 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_84_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 84 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 39 (PairwiseRDD[105] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 39.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 40 (PairwiseRDD[171] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_85 stored as values in memory (estimated size 10.5 KB, free 354.1 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_85_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.1 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_85_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 85 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 40 (PairwiseRDD[171] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 40.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 41 (PairwiseRDD[267] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_86 stored as values in memory (estimated size 10.5 KB, free 354.1 MB)
+2019-07-16 18:40:37 INFO  MemoryStore:54 - Block broadcast_86_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.1 MB)
+2019-07-16 18:40:37 INFO  BlockManagerInfo:54 - Added broadcast_86_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:37 INFO  SparkContext:54 - Created broadcast 86 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 41 (PairwiseRDD[267] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:37 INFO  TaskSchedulerImpl:54 - Adding task set 41.0 with 1 tasks
+2019-07-16 18:40:37 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 42 (PairwiseRDD[45] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:38 INFO  MemoryStore:54 - Block broadcast_87 stored as values in memory (estimated size 10.5 KB, free 354.1 MB)
+2019-07-16 18:40:38 INFO  MemoryStore:54 - Block broadcast_87_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.1 MB)
+2019-07-16 18:40:38 INFO  BlockManagerInfo:54 - Added broadcast_87_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:38 INFO  SparkContext:54 - Created broadcast 87 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:38 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 42 (PairwiseRDD[45] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:38 INFO  TaskSchedulerImpl:54 - Adding task set 42.0 with 1 tasks
+2019-07-16 18:40:38 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 43 (PairwiseRDD[87] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:38 INFO  MemoryStore:54 - Block broadcast_88 stored as values in memory (estimated size 10.5 KB, free 354.1 MB)
+2019-07-16 18:40:38 INFO  MemoryStore:54 - Block broadcast_88_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.1 MB)
+2019-07-16 18:40:38 INFO  BlockManagerInfo:54 - Added broadcast_88_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:38 INFO  SparkContext:54 - Created broadcast 88 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:38 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 43 (PairwiseRDD[87] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:38 INFO  TaskSchedulerImpl:54 - Adding task set 43.0 with 1 tasks
+2019-07-16 18:40:38 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 44 (PairwiseRDD[189] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20), which has no missing parents
+2019-07-16 18:40:38 INFO  MemoryStore:54 - Block broadcast_89 stored as values in memory (estimated size 10.5 KB, free 354.1 MB)
+2019-07-16 18:40:38 INFO  MemoryStore:54 - Block broadcast_89_piece0 stored as bytes in memory (estimated size 6.9 KB, free 354.1 MB)
+2019-07-16 18:40:38 INFO  BlockManagerInfo:54 - Added broadcast_89_piece0 in memory on 192.168.128.82:53052 (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:38 INFO  SparkContext:54 - Created broadcast 89 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:38 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 44 (PairwiseRDD[189] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) (first 15 tasks are for partitions Vector(0))
+2019-07-16 18:40:38 INFO  TaskSchedulerImpl:54 - Adding task set 44.0 with 1 tasks
+2019-07-16 18:40:38 INFO  PythonRunner:54 - Times: total = 975, boot = 865, init = 33, finish = 77
+2019-07-16 18:40:39 INFO  Executor:54 - Finished task 0.0 in stage 0.0 (TID 0). 1763 bytes result sent to driver
+2019-07-16 18:40:39 INFO  TaskSetManager:54 - Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:39 INFO  Executor:54 - Running task 0.0 in stage 1.0 (TID 1)
+2019-07-16 18:40:39 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 1599 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:39 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/24:0+327977
+2019-07-16 18:40:39 INFO  TaskSchedulerImpl:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:39 INFO  PythonAccumulatorV2:54 - Connected to AccumulatorServer at host: 127.0.0.1 port: 53053
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - ShuffleMapStage 0 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 1.707 s
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 9, ShuffleMapStage 1, ShuffleMapStage 31, ShuffleMapStage 2, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 3, ShuffleMapStage 25, ShuffleMapStage 4, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 14, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 10, ShuffleMapStage 40, ShuffleMapStage 11, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 12, ShuffleMapStage 34, ShuffleMapStage 13, ShuffleMapStage 5, ShuffleMapStage 35, ShuffleMapStage 6, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 7, ShuffleMapStage 29, ShuffleMapStage 8)
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:39 INFO  PythonRunner:54 - Times: total = 150, boot = -271, init = 283, finish = 138
+2019-07-16 18:40:39 INFO  Executor:54 - Finished task 0.0 in stage 1.0 (TID 1). 1720 bytes result sent to driver
+2019-07-16 18:40:39 INFO  TaskSetManager:54 - Starting task 0.0 in stage 2.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:39 INFO  Executor:54 - Running task 0.0 in stage 2.0 (TID 2)
+2019-07-16 18:40:39 INFO  TaskSetManager:54 - Finished task 0.0 in stage 1.0 (TID 1) in 168 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:39 INFO  TaskSchedulerImpl:54 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - ShuffleMapStage 1 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 1.781 s
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 9, ShuffleMapStage 31, ShuffleMapStage 2, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 3, ShuffleMapStage 25, ShuffleMapStage 4, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 14, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 10, ShuffleMapStage 40, ShuffleMapStage 11, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 12, ShuffleMapStage 34, ShuffleMapStage 13, ShuffleMapStage 5, ShuffleMapStage 35, ShuffleMapStage 6, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 7, ShuffleMapStage 29, ShuffleMapStage 8)
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:39 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/11:0+1094362
+2019-07-16 18:40:39 INFO  PythonRunner:54 - Times: total = 415, boot = -5, init = 10, finish = 410
+2019-07-16 18:40:39 INFO  Executor:54 - Finished task 0.0 in stage 2.0 (TID 2). 1677 bytes result sent to driver
+2019-07-16 18:40:39 INFO  TaskSetManager:54 - Starting task 0.0 in stage 3.0 (TID 3, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:39 INFO  Executor:54 - Running task 0.0 in stage 3.0 (TID 3)
+2019-07-16 18:40:39 INFO  TaskSetManager:54 - Finished task 0.0 in stage 2.0 (TID 2) in 435 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:39 INFO  TaskSchedulerImpl:54 - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - ShuffleMapStage 2 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 2.177 s
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 9, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 3, ShuffleMapStage 25, ShuffleMapStage 4, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 14, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 10, ShuffleMapStage 40, ShuffleMapStage 11, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 12, ShuffleMapStage 34, ShuffleMapStage 13, ShuffleMapStage 5, ShuffleMapStage 35, ShuffleMapStage 6, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 7, ShuffleMapStage 29, ShuffleMapStage 8)
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:39 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/14:0+306546
+2019-07-16 18:40:39 INFO  PythonRunner:54 - Times: total = 150, boot = -2, init = 5, finish = 147
+2019-07-16 18:40:39 INFO  Executor:54 - Finished task 0.0 in stage 3.0 (TID 3). 1720 bytes result sent to driver
+2019-07-16 18:40:39 INFO  TaskSetManager:54 - Starting task 0.0 in stage 4.0 (TID 4, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:39 INFO  Executor:54 - Running task 0.0 in stage 4.0 (TID 4)
+2019-07-16 18:40:39 INFO  TaskSetManager:54 - Finished task 0.0 in stage 3.0 (TID 3) in 169 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:39 INFO  TaskSchedulerImpl:54 - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:39 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/10:0+130556
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - ShuffleMapStage 3 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 2.340 s
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 9, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 4, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 14, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 10, ShuffleMapStage 40, ShuffleMapStage 11, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 12, ShuffleMapStage 34, ShuffleMapStage 13, ShuffleMapStage 5, ShuffleMapStage 35, ShuffleMapStage 6, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 7, ShuffleMapStage 29, ShuffleMapStage 8)
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:39 INFO  PythonRunner:54 - Times: total = 72, boot = 11, init = 0, finish = 61
+2019-07-16 18:40:39 INFO  Executor:54 - Finished task 0.0 in stage 4.0 (TID 4). 1677 bytes result sent to driver
+2019-07-16 18:40:39 INFO  TaskSetManager:54 - Starting task 0.0 in stage 5.0 (TID 5, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:39 INFO  Executor:54 - Running task 0.0 in stage 5.0 (TID 5)
+2019-07-16 18:40:39 INFO  TaskSetManager:54 - Finished task 0.0 in stage 4.0 (TID 4) in 98 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:39 INFO  TaskSchedulerImpl:54 - Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - ShuffleMapStage 4 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 2.423 s
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 9, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 14, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 10, ShuffleMapStage 40, ShuffleMapStage 11, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 12, ShuffleMapStage 34, ShuffleMapStage 13, ShuffleMapStage 5, ShuffleMapStage 35, ShuffleMapStage 6, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 7, ShuffleMapStage 29, ShuffleMapStage 8)
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:39 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:39 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/23:0+874768
+2019-07-16 18:40:40 INFO  PythonRunner:54 - Times: total = 384, boot = -16, init = 42, finish = 358
+2019-07-16 18:40:40 INFO  Executor:54 - Finished task 0.0 in stage 5.0 (TID 5). 1677 bytes result sent to driver
+2019-07-16 18:40:40 INFO  TaskSetManager:54 - Starting task 0.0 in stage 6.0 (TID 6, localhost, executor driver, partition 0, PROCESS_LOCAL, 7922 bytes)
+2019-07-16 18:40:40 INFO  Executor:54 - Running task 0.0 in stage 6.0 (TID 6)
+2019-07-16 18:40:40 INFO  TaskSetManager:54 - Finished task 0.0 in stage 5.0 (TID 5) in 406 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:40 INFO  TaskSchedulerImpl:54 - Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:40 INFO  DAGScheduler:54 - ShuffleMapStage 5 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 2.811 s
+2019-07-16 18:40:40 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:40 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 9, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 14, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 10, ShuffleMapStage 40, ShuffleMapStage 11, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 12, ShuffleMapStage 34, ShuffleMapStage 13, ShuffleMapStage 35, ShuffleMapStage 6, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 7, ShuffleMapStage 29, ShuffleMapStage 8)
+2019-07-16 18:40:40 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:40 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:40 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/2:0+1696859
+2019-07-16 18:40:40 INFO  PythonRunner:54 - Times: total = 628, boot = -2, init = 13, finish = 617
+2019-07-16 18:40:40 INFO  Executor:54 - Finished task 0.0 in stage 6.0 (TID 6). 1677 bytes result sent to driver
+2019-07-16 18:40:40 INFO  TaskSetManager:54 - Starting task 0.0 in stage 7.0 (TID 7, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:40 INFO  Executor:54 - Running task 0.0 in stage 7.0 (TID 7)
+2019-07-16 18:40:40 INFO  TaskSetManager:54 - Finished task 0.0 in stage 6.0 (TID 6) in 640 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:40 INFO  TaskSchedulerImpl:54 - Removed TaskSet 6.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:40 INFO  DAGScheduler:54 - ShuffleMapStage 6 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 3.440 s
+2019-07-16 18:40:40 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:40 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/17:0+443710
+2019-07-16 18:40:40 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 9, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 14, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 10, ShuffleMapStage 40, ShuffleMapStage 11, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 12, ShuffleMapStage 34, ShuffleMapStage 13, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 7, ShuffleMapStage 29, ShuffleMapStage 8)
+2019-07-16 18:40:40 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:40 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:41 INFO  PythonRunner:54 - Times: total = 170, boot = -4, init = 8, finish = 166
+2019-07-16 18:40:41 INFO  Executor:54 - Finished task 0.0 in stage 7.0 (TID 7). 1677 bytes result sent to driver
+2019-07-16 18:40:41 INFO  TaskSetManager:54 - Starting task 0.0 in stage 8.0 (TID 8, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:41 INFO  TaskSetManager:54 - Finished task 0.0 in stage 7.0 (TID 7) in 186 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:41 INFO  Executor:54 - Running task 0.0 in stage 8.0 (TID 8)
+2019-07-16 18:40:41 INFO  TaskSchedulerImpl:54 - Removed TaskSet 7.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - ShuffleMapStage 7 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 3.608 s
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 9, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 14, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 10, ShuffleMapStage 40, ShuffleMapStage 11, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 12, ShuffleMapStage 34, ShuffleMapStage 13, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29, ShuffleMapStage 8)
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:41 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/38:0+101296
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:41 INFO  PythonRunner:54 - Times: total = 41, boot = -3, init = 6, finish = 38
+2019-07-16 18:40:41 INFO  Executor:54 - Finished task 0.0 in stage 8.0 (TID 8). 1677 bytes result sent to driver
+2019-07-16 18:40:41 INFO  TaskSetManager:54 - Starting task 0.0 in stage 9.0 (TID 9, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:41 INFO  Executor:54 - Running task 0.0 in stage 9.0 (TID 9)
+2019-07-16 18:40:41 INFO  TaskSetManager:54 - Finished task 0.0 in stage 8.0 (TID 8) in 60 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:41 INFO  TaskSchedulerImpl:54 - Removed TaskSet 8.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - ShuffleMapStage 8 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 3.652 s
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 9, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 14, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 10, ShuffleMapStage 40, ShuffleMapStage 11, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 12, ShuffleMapStage 34, ShuffleMapStage 13, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:41 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/35:0+298049
+2019-07-16 18:40:41 INFO  PythonRunner:54 - Times: total = 116, boot = -6, init = 10, finish = 112
+2019-07-16 18:40:41 INFO  Executor:54 - Finished task 0.0 in stage 9.0 (TID 9). 1677 bytes result sent to driver
+2019-07-16 18:40:41 INFO  TaskSetManager:54 - Starting task 0.0 in stage 10.0 (TID 10, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:41 INFO  TaskSetManager:54 - Finished task 0.0 in stage 9.0 (TID 9) in 127 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:41 INFO  Executor:54 - Running task 0.0 in stage 10.0 (TID 10)
+2019-07-16 18:40:41 INFO  TaskSchedulerImpl:54 - Removed TaskSet 9.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - ShuffleMapStage 9 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 3.762 s
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 14, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 10, ShuffleMapStage 40, ShuffleMapStage 11, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 12, ShuffleMapStage 34, ShuffleMapStage 13, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:41 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/42:0+249746
+2019-07-16 18:40:41 INFO  PythonRunner:54 - Times: total = 89, boot = -2, init = 5, finish = 86
+2019-07-16 18:40:41 INFO  Executor:54 - Finished task 0.0 in stage 10.0 (TID 10). 1677 bytes result sent to driver
+2019-07-16 18:40:41 INFO  TaskSetManager:54 - Starting task 0.0 in stage 11.0 (TID 11, localhost, executor driver, partition 0, PROCESS_LOCAL, 7922 bytes)
+2019-07-16 18:40:41 INFO  TaskSetManager:54 - Finished task 0.0 in stage 10.0 (TID 10) in 106 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:41 INFO  TaskSchedulerImpl:54 - Removed TaskSet 10.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:41 INFO  Executor:54 - Running task 0.0 in stage 11.0 (TID 11)
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - ShuffleMapStage 10 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 3.850 s
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 14, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 40, ShuffleMapStage 11, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 12, ShuffleMapStage 34, ShuffleMapStage 13, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:41 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/5:0+168761
+2019-07-16 18:40:41 INFO  PythonRunner:54 - Times: total = 73, boot = -6, init = 12, finish = 67
+2019-07-16 18:40:41 INFO  Executor:54 - Finished task 0.0 in stage 11.0 (TID 11). 1677 bytes result sent to driver
+2019-07-16 18:40:41 INFO  TaskSetManager:54 - Starting task 0.0 in stage 12.0 (TID 12, localhost, executor driver, partition 0, PROCESS_LOCAL, 7922 bytes)
+2019-07-16 18:40:41 INFO  Executor:54 - Running task 0.0 in stage 12.0 (TID 12)
+2019-07-16 18:40:41 INFO  TaskSetManager:54 - Finished task 0.0 in stage 11.0 (TID 11) in 97 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:41 INFO  TaskSchedulerImpl:54 - Removed TaskSet 11.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - ShuffleMapStage 11 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 3.926 s
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 14, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 12, ShuffleMapStage 34, ShuffleMapStage 13, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:41 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/4:0+927931
+2019-07-16 18:40:41 INFO  BlockManagerInfo:54 - Removed broadcast_46_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:41 INFO  BlockManagerInfo:54 - Removed broadcast_51_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:41 INFO  BlockManagerInfo:54 - Removed broadcast_48_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:41 INFO  BlockManagerInfo:54 - Removed broadcast_53_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:41 INFO  BlockManagerInfo:54 - Removed broadcast_50_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:41 INFO  BlockManagerInfo:54 - Removed broadcast_54_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:41 INFO  BlockManagerInfo:54 - Removed broadcast_49_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:41 INFO  BlockManagerInfo:54 - Removed broadcast_55_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:41 INFO  BlockManagerInfo:54 - Removed broadcast_56_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:41 INFO  BlockManagerInfo:54 - Removed broadcast_45_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:41 INFO  BlockManagerInfo:54 - Removed broadcast_47_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.0 MB)
+2019-07-16 18:40:41 INFO  BlockManagerInfo:54 - Removed broadcast_52_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:41 INFO  PythonRunner:54 - Times: total = 352, boot = -10, init = 31, finish = 331
+2019-07-16 18:40:41 INFO  Executor:54 - Finished task 0.0 in stage 12.0 (TID 12). 1720 bytes result sent to driver
+2019-07-16 18:40:41 INFO  TaskSetManager:54 - Starting task 0.0 in stage 13.0 (TID 13, localhost, executor driver, partition 0, PROCESS_LOCAL, 7922 bytes)
+2019-07-16 18:40:41 INFO  Executor:54 - Running task 0.0 in stage 13.0 (TID 13)
+2019-07-16 18:40:41 INFO  TaskSetManager:54 - Finished task 0.0 in stage 12.0 (TID 12) in 366 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:41 INFO  TaskSchedulerImpl:54 - Removed TaskSet 12.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - ShuffleMapStage 12 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 4.272 s
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 14, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 13, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:41 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:41 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/3:0+1734379
+2019-07-16 18:40:42 INFO  PythonRunner:54 - Times: total = 562, boot = 7, init = 0, finish = 555
+2019-07-16 18:40:42 INFO  Executor:54 - Finished task 0.0 in stage 13.0 (TID 13). 1677 bytes result sent to driver
+2019-07-16 18:40:42 INFO  TaskSetManager:54 - Starting task 0.0 in stage 14.0 (TID 14, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:42 INFO  TaskSetManager:54 - Finished task 0.0 in stage 13.0 (TID 13) in 576 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:42 INFO  Executor:54 - Running task 0.0 in stage 14.0 (TID 14)
+2019-07-16 18:40:42 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/40:0+245597
+2019-07-16 18:40:42 INFO  TaskSchedulerImpl:54 - Removed TaskSet 13.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - ShuffleMapStage 13 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 4.798 s
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 14, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:42 INFO  PythonRunner:54 - Times: total = 114, boot = 15, init = 0, finish = 99
+2019-07-16 18:40:42 INFO  Executor:54 - Finished task 0.0 in stage 14.0 (TID 14). 1677 bytes result sent to driver
+2019-07-16 18:40:42 INFO  TaskSetManager:54 - Starting task 0.0 in stage 15.0 (TID 15, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:42 INFO  TaskSetManager:54 - Finished task 0.0 in stage 14.0 (TID 14) in 127 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:42 INFO  Executor:54 - Running task 0.0 in stage 15.0 (TID 15)
+2019-07-16 18:40:42 INFO  TaskSchedulerImpl:54 - Removed TaskSet 14.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - ShuffleMapStage 14 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 4.897 s
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 15, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:42 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/20:0+284879
+2019-07-16 18:40:42 INFO  PythonRunner:54 - Times: total = 120, boot = 1, init = 3, finish = 116
+2019-07-16 18:40:42 INFO  Executor:54 - Finished task 0.0 in stage 15.0 (TID 15). 1677 bytes result sent to driver
+2019-07-16 18:40:42 INFO  TaskSetManager:54 - Starting task 0.0 in stage 16.0 (TID 16, localhost, executor driver, partition 0, PROCESS_LOCAL, 7922 bytes)
+2019-07-16 18:40:42 INFO  Executor:54 - Running task 0.0 in stage 16.0 (TID 16)
+2019-07-16 18:40:42 INFO  TaskSetManager:54 - Finished task 0.0 in stage 15.0 (TID 15) in 137 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:42 INFO  TaskSchedulerImpl:54 - Removed TaskSet 15.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - ShuffleMapStage 15 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 5.019 s
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 37, ShuffleMapStage 16, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:42 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/7:0+296833
+2019-07-16 18:40:42 INFO  PythonRunner:54 - Times: total = 115, boot = 6, init = 1, finish = 108
+2019-07-16 18:40:42 INFO  Executor:54 - Finished task 0.0 in stage 16.0 (TID 16). 1677 bytes result sent to driver
+2019-07-16 18:40:42 INFO  TaskSetManager:54 - Starting task 0.0 in stage 17.0 (TID 17, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:42 INFO  TaskSetManager:54 - Finished task 0.0 in stage 16.0 (TID 16) in 126 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:42 INFO  Executor:54 - Running task 0.0 in stage 17.0 (TID 17)
+2019-07-16 18:40:42 INFO  TaskSchedulerImpl:54 - Removed TaskSet 16.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - ShuffleMapStage 16 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 5.128 s
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 17, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:42 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:42 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/33:0+474779
+2019-07-16 18:40:43 INFO  PythonRunner:54 - Times: total = 192, boot = 5, init = 0, finish = 187
+2019-07-16 18:40:43 INFO  Executor:54 - Finished task 0.0 in stage 17.0 (TID 17). 1677 bytes result sent to driver
+2019-07-16 18:40:43 INFO  TaskSetManager:54 - Starting task 0.0 in stage 18.0 (TID 18, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:43 INFO  TaskSetManager:54 - Finished task 0.0 in stage 17.0 (TID 17) in 204 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:43 INFO  Executor:54 - Running task 0.0 in stage 18.0 (TID 18)
+2019-07-16 18:40:43 INFO  TaskSchedulerImpl:54 - Removed TaskSet 17.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - ShuffleMapStage 17 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 5.319 s
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 18, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:43 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/22:0+524712
+2019-07-16 18:40:43 INFO  PythonRunner:54 - Times: total = 205, boot = -2, init = 6, finish = 201
+2019-07-16 18:40:43 INFO  Executor:54 - Finished task 0.0 in stage 18.0 (TID 18). 1677 bytes result sent to driver
+2019-07-16 18:40:43 INFO  TaskSetManager:54 - Starting task 0.0 in stage 19.0 (TID 19, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:43 INFO  TaskSetManager:54 - Finished task 0.0 in stage 18.0 (TID 18) in 222 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:43 INFO  TaskSchedulerImpl:54 - Removed TaskSet 18.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:43 INFO  Executor:54 - Running task 0.0 in stage 19.0 (TID 19)
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - ShuffleMapStage 18 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 5.527 s
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 19, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:43 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/37:0+90336
+2019-07-16 18:40:43 INFO  PythonRunner:54 - Times: total = 44, boot = -4, init = 7, finish = 41
+2019-07-16 18:40:43 INFO  Executor:54 - Finished task 0.0 in stage 19.0 (TID 19). 1677 bytes result sent to driver
+2019-07-16 18:40:43 INFO  TaskSetManager:54 - Starting task 0.0 in stage 20.0 (TID 20, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:43 INFO  TaskSetManager:54 - Finished task 0.0 in stage 19.0 (TID 19) in 66 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:43 INFO  TaskSchedulerImpl:54 - Removed TaskSet 19.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:43 INFO  Executor:54 - Running task 0.0 in stage 20.0 (TID 20)
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - ShuffleMapStage 19 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 5.578 s
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 20, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:43 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/18:0+1865726
+2019-07-16 18:40:43 INFO  PythonRunner:54 - Times: total = 588, boot = -10, init = 15, finish = 583
+2019-07-16 18:40:43 INFO  Executor:54 - Finished task 0.0 in stage 20.0 (TID 20). 1677 bytes result sent to driver
+2019-07-16 18:40:43 INFO  TaskSetManager:54 - Starting task 0.0 in stage 21.0 (TID 21, localhost, executor driver, partition 0, PROCESS_LOCAL, 7922 bytes)
+2019-07-16 18:40:43 INFO  Executor:54 - Running task 0.0 in stage 21.0 (TID 21)
+2019-07-16 18:40:43 INFO  TaskSetManager:54 - Finished task 0.0 in stage 20.0 (TID 20) in 600 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:43 INFO  TaskSchedulerImpl:54 - Removed TaskSet 20.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - ShuffleMapStage 20 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 6.158 s
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 42, ShuffleMapStage 21, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:43 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:43 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/0:0+4516586
+2019-07-16 18:40:44 INFO  BlockManagerInfo:54 - Removed broadcast_64_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:44 INFO  BlockManagerInfo:54 - Removed broadcast_58_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:44 INFO  BlockManagerInfo:54 - Removed broadcast_59_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:44 INFO  BlockManagerInfo:54 - Removed broadcast_65_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:44 INFO  BlockManagerInfo:54 - Removed broadcast_62_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:44 INFO  BlockManagerInfo:54 - Removed broadcast_57_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:44 INFO  BlockManagerInfo:54 - Removed broadcast_60_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:44 INFO  BlockManagerInfo:54 - Removed broadcast_63_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:44 INFO  BlockManagerInfo:54 - Removed broadcast_61_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:45 INFO  PythonRunner:54 - Times: total = 1785, boot = -1, init = 5, finish = 1781
+2019-07-16 18:40:45 INFO  Executor:54 - Finished task 0.0 in stage 21.0 (TID 21). 1720 bytes result sent to driver
+2019-07-16 18:40:45 INFO  TaskSetManager:54 - Starting task 0.0 in stage 22.0 (TID 22, localhost, executor driver, partition 0, PROCESS_LOCAL, 7922 bytes)
+2019-07-16 18:40:45 INFO  TaskSetManager:54 - Finished task 0.0 in stage 21.0 (TID 21) in 1799 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:45 INFO  Executor:54 - Running task 0.0 in stage 22.0 (TID 22)
+2019-07-16 18:40:45 INFO  TaskSchedulerImpl:54 - Removed TaskSet 21.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:45 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/8:0+401548
+2019-07-16 18:40:45 INFO  DAGScheduler:54 - ShuffleMapStage 21 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 7.952 s
+2019-07-16 18:40:45 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:45 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 22, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:45 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:45 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:45 INFO  PythonRunner:54 - Times: total = 164, boot = -4, init = 9, finish = 159
+2019-07-16 18:40:45 INFO  Executor:54 - Finished task 0.0 in stage 22.0 (TID 22). 1720 bytes result sent to driver
+2019-07-16 18:40:45 INFO  TaskSetManager:54 - Starting task 0.0 in stage 23.0 (TID 23, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:45 INFO  TaskSetManager:54 - Finished task 0.0 in stage 22.0 (TID 22) in 177 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:45 INFO  TaskSchedulerImpl:54 - Removed TaskSet 22.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:45 INFO  Executor:54 - Running task 0.0 in stage 23.0 (TID 23)
+2019-07-16 18:40:45 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/34:0+443371
+2019-07-16 18:40:45 INFO  DAGScheduler:54 - ShuffleMapStage 22 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 8.120 s
+2019-07-16 18:40:45 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:45 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 23, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:45 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:45 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:46 INFO  PythonRunner:54 - Times: total = 207, boot = 1, init = 10, finish = 196
+2019-07-16 18:40:46 INFO  Executor:54 - Finished task 0.0 in stage 23.0 (TID 23). 1677 bytes result sent to driver
+2019-07-16 18:40:46 INFO  TaskSetManager:54 - Starting task 0.0 in stage 24.0 (TID 24, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:46 INFO  TaskSetManager:54 - Finished task 0.0 in stage 23.0 (TID 23) in 221 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:46 INFO  TaskSchedulerImpl:54 - Removed TaskSet 23.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:46 INFO  Executor:54 - Running task 0.0 in stage 24.0 (TID 24)
+2019-07-16 18:40:46 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/44:0+889820
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - ShuffleMapStage 23 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 8.334 s
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 24, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:46 INFO  PythonRunner:54 - Times: total = 328, boot = 2, init = 7, finish = 319
+2019-07-16 18:40:46 INFO  Executor:54 - Finished task 0.0 in stage 24.0 (TID 24). 1677 bytes result sent to driver
+2019-07-16 18:40:46 INFO  TaskSetManager:54 - Starting task 0.0 in stage 25.0 (TID 25, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:46 INFO  Executor:54 - Running task 0.0 in stage 25.0 (TID 25)
+2019-07-16 18:40:46 INFO  TaskSetManager:54 - Finished task 0.0 in stage 24.0 (TID 24) in 341 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:46 INFO  TaskSchedulerImpl:54 - Removed TaskSet 24.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:46 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/39:0+137279
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - ShuffleMapStage 24 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 8.664 s
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 25, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:46 INFO  PythonRunner:54 - Times: total = 61, boot = 1, init = 6, finish = 54
+2019-07-16 18:40:46 INFO  Executor:54 - Finished task 0.0 in stage 25.0 (TID 25). 1634 bytes result sent to driver
+2019-07-16 18:40:46 INFO  TaskSetManager:54 - Starting task 0.0 in stage 26.0 (TID 26, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:46 INFO  TaskSetManager:54 - Finished task 0.0 in stage 25.0 (TID 25) in 73 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:46 INFO  Executor:54 - Running task 0.0 in stage 26.0 (TID 26)
+2019-07-16 18:40:46 INFO  TaskSchedulerImpl:54 - Removed TaskSet 25.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - ShuffleMapStage 25 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 8.722 s
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 26, ShuffleMapStage 27, ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:46 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/27:0+146263
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:46 INFO  PythonRunner:54 - Times: total = 69, boot = -3, init = 8, finish = 64
+2019-07-16 18:40:46 INFO  Executor:54 - Finished task 0.0 in stage 26.0 (TID 26). 1677 bytes result sent to driver
+2019-07-16 18:40:46 INFO  TaskSetManager:54 - Starting task 0.0 in stage 27.0 (TID 27, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:46 INFO  TaskSetManager:54 - Finished task 0.0 in stage 26.0 (TID 26) in 82 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:46 INFO  Executor:54 - Running task 0.0 in stage 27.0 (TID 27)
+2019-07-16 18:40:46 INFO  TaskSchedulerImpl:54 - Removed TaskSet 26.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - ShuffleMapStage 26 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 8.790 s
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 27, ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:46 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/16:0+648889
+2019-07-16 18:40:46 INFO  PythonRunner:54 - Times: total = 246, boot = -4, init = 8, finish = 242
+2019-07-16 18:40:46 INFO  Executor:54 - Finished task 0.0 in stage 27.0 (TID 27). 1677 bytes result sent to driver
+2019-07-16 18:40:46 INFO  TaskSetManager:54 - Starting task 0.0 in stage 28.0 (TID 28, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:46 INFO  Executor:54 - Running task 0.0 in stage 28.0 (TID 28)
+2019-07-16 18:40:46 INFO  TaskSetManager:54 - Finished task 0.0 in stage 27.0 (TID 27) in 259 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:46 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/13:0+231763
+2019-07-16 18:40:46 INFO  TaskSchedulerImpl:54 - Removed TaskSet 27.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - ShuffleMapStage 27 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 9.046 s
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 28, ShuffleMapStage 29)
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:46 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:46 INFO  PythonRunner:54 - Times: total = 125, boot = 0, init = 7, finish = 118
+2019-07-16 18:40:46 INFO  Executor:54 - Finished task 0.0 in stage 28.0 (TID 28). 1677 bytes result sent to driver
+2019-07-16 18:40:46 INFO  TaskSetManager:54 - Starting task 0.0 in stage 29.0 (TID 29, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:46 INFO  TaskSetManager:54 - Finished task 0.0 in stage 28.0 (TID 28) in 138 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:46 INFO  TaskSchedulerImpl:54 - Removed TaskSet 28.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:46 INFO  Executor:54 - Running task 0.0 in stage 29.0 (TID 29)
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - ShuffleMapStage 28 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 9.174 s
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36, ShuffleMapStage 29)
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:47 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/36:0+291481
+2019-07-16 18:40:47 INFO  PythonRunner:54 - Times: total = 134, boot = -5, init = 10, finish = 129
+2019-07-16 18:40:47 INFO  Executor:54 - Finished task 0.0 in stage 29.0 (TID 29). 1677 bytes result sent to driver
+2019-07-16 18:40:47 INFO  TaskSetManager:54 - Starting task 0.0 in stage 30.0 (TID 30, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:47 INFO  TaskSetManager:54 - Finished task 0.0 in stage 29.0 (TID 29) in 151 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:47 INFO  TaskSchedulerImpl:54 - Removed TaskSet 29.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:47 INFO  Executor:54 - Running task 0.0 in stage 30.0 (TID 30)
+2019-07-16 18:40:47 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/12:0+1665374
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - ShuffleMapStage 29 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 9.312 s
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 30, ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36)
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:47 INFO  PythonRunner:54 - Times: total = 583, boot = 0, init = 5, finish = 578
+2019-07-16 18:40:47 INFO  Executor:54 - Finished task 0.0 in stage 30.0 (TID 30). 1677 bytes result sent to driver
+2019-07-16 18:40:47 INFO  TaskSetManager:54 - Starting task 0.0 in stage 31.0 (TID 31, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:47 INFO  TaskSetManager:54 - Finished task 0.0 in stage 30.0 (TID 30) in 596 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:47 INFO  TaskSchedulerImpl:54 - Removed TaskSet 30.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:47 INFO  Executor:54 - Running task 0.0 in stage 31.0 (TID 31)
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - ShuffleMapStage 30 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 9.896 s
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 31, ShuffleMapStage 32, ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36)
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:47 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/19:0+1038879
+2019-07-16 18:40:47 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:48 INFO  PythonRunner:54 - Times: total = 412, boot = -4, init = 11, finish = 405
+2019-07-16 18:40:48 INFO  Executor:54 - Finished task 0.0 in stage 31.0 (TID 31). 1677 bytes result sent to driver
+2019-07-16 18:40:48 INFO  TaskSetManager:54 - Starting task 0.0 in stage 32.0 (TID 32, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:48 INFO  Executor:54 - Running task 0.0 in stage 32.0 (TID 32)
+2019-07-16 18:40:48 INFO  TaskSetManager:54 - Finished task 0.0 in stage 31.0 (TID 31) in 426 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:48 INFO  TaskSchedulerImpl:54 - Removed TaskSet 31.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:48 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/32:0+585667
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - ShuffleMapStage 31 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 10.312 s
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 32, ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36)
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:48 INFO  PythonRunner:54 - Times: total = 211, boot = 2, init = 1, finish = 208
+2019-07-16 18:40:48 INFO  Executor:54 - Finished task 0.0 in stage 32.0 (TID 32). 1677 bytes result sent to driver
+2019-07-16 18:40:48 INFO  TaskSetManager:54 - Starting task 0.0 in stage 33.0 (TID 33, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:48 INFO  TaskSetManager:54 - Finished task 0.0 in stage 32.0 (TID 32) in 220 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:48 INFO  Executor:54 - Running task 0.0 in stage 33.0 (TID 33)
+2019-07-16 18:40:48 INFO  TaskSchedulerImpl:54 - Removed TaskSet 32.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - ShuffleMapStage 32 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 10.522 s
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 33, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36)
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:48 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/26:0+663677
+2019-07-16 18:40:48 INFO  PythonRunner:54 - Times: total = 258, boot = 0, init = 4, finish = 254
+2019-07-16 18:40:48 INFO  Executor:54 - Finished task 0.0 in stage 33.0 (TID 33). 1677 bytes result sent to driver
+2019-07-16 18:40:48 INFO  TaskSetManager:54 - Starting task 0.0 in stage 34.0 (TID 34, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:48 INFO  Executor:54 - Running task 0.0 in stage 34.0 (TID 34)
+2019-07-16 18:40:48 INFO  TaskSetManager:54 - Finished task 0.0 in stage 33.0 (TID 33) in 268 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:48 INFO  TaskSchedulerImpl:54 - Removed TaskSet 33.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - ShuffleMapStage 33 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 10.779 s
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 34, ShuffleMapStage 35, ShuffleMapStage 36)
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:48 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/31:0+567948
+2019-07-16 18:40:48 INFO  PythonRunner:54 - Times: total = 210, boot = -2, init = 5, finish = 207
+2019-07-16 18:40:48 INFO  Executor:54 - Finished task 0.0 in stage 34.0 (TID 34). 1677 bytes result sent to driver
+2019-07-16 18:40:48 INFO  TaskSetManager:54 - Starting task 0.0 in stage 35.0 (TID 35, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:48 INFO  TaskSetManager:54 - Finished task 0.0 in stage 34.0 (TID 34) in 221 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:48 INFO  TaskSchedulerImpl:54 - Removed TaskSet 34.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:48 INFO  Executor:54 - Running task 0.0 in stage 35.0 (TID 35)
+2019-07-16 18:40:48 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/15:0+917730
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - ShuffleMapStage 34 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 10.987 s
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 35, ShuffleMapStage 36)
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:48 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:49 INFO  PythonRunner:54 - Times: total = 346, boot = 0, init = 2, finish = 344
+2019-07-16 18:40:49 INFO  Executor:54 - Finished task 0.0 in stage 35.0 (TID 35). 1720 bytes result sent to driver
+2019-07-16 18:40:49 INFO  TaskSetManager:54 - Starting task 0.0 in stage 36.0 (TID 36, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:49 INFO  Executor:54 - Running task 0.0 in stage 36.0 (TID 36)
+2019-07-16 18:40:49 INFO  TaskSetManager:54 - Finished task 0.0 in stage 35.0 (TID 35) in 356 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:49 INFO  TaskSchedulerImpl:54 - Removed TaskSet 35.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - ShuffleMapStage 35 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 11.330 s
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41, ShuffleMapStage 36)
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:49 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/43:0+659476
+2019-07-16 18:40:49 INFO  PythonRunner:54 - Times: total = 238, boot = 2, init = 3, finish = 233
+2019-07-16 18:40:49 INFO  Executor:54 - Finished task 0.0 in stage 36.0 (TID 36). 1677 bytes result sent to driver
+2019-07-16 18:40:49 INFO  TaskSetManager:54 - Starting task 0.0 in stage 37.0 (TID 37, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:49 INFO  Executor:54 - Running task 0.0 in stage 37.0 (TID 37)
+2019-07-16 18:40:49 INFO  TaskSetManager:54 - Finished task 0.0 in stage 36.0 (TID 36) in 251 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:49 INFO  TaskSchedulerImpl:54 - Removed TaskSet 36.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - ShuffleMapStage 36 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 11.569 s
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 37, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41)
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:49 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/21:0+865365
+2019-07-16 18:40:49 INFO  PythonRunner:54 - Times: total = 299, boot = 11, init = 0, finish = 288
+2019-07-16 18:40:49 INFO  Executor:54 - Finished task 0.0 in stage 37.0 (TID 37). 1677 bytes result sent to driver
+2019-07-16 18:40:49 INFO  TaskSetManager:54 - Starting task 0.0 in stage 38.0 (TID 38, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:49 INFO  TaskSetManager:54 - Finished task 0.0 in stage 37.0 (TID 37) in 310 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:49 INFO  Executor:54 - Running task 0.0 in stage 38.0 (TID 38)
+2019-07-16 18:40:49 INFO  TaskSchedulerImpl:54 - Removed TaskSet 37.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - ShuffleMapStage 37 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 11.870 s
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 38, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41)
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:49 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/29:0+66342
+2019-07-16 18:40:49 INFO  PythonRunner:54 - Times: total = 30, boot = -1, init = 5, finish = 26
+2019-07-16 18:40:49 INFO  Executor:54 - Finished task 0.0 in stage 38.0 (TID 38). 1677 bytes result sent to driver
+2019-07-16 18:40:49 INFO  TaskSetManager:54 - Starting task 0.0 in stage 39.0 (TID 39, localhost, executor driver, partition 0, PROCESS_LOCAL, 7922 bytes)
+2019-07-16 18:40:49 INFO  TaskSetManager:54 - Finished task 0.0 in stage 38.0 (TID 38) in 45 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:49 INFO  TaskSchedulerImpl:54 - Removed TaskSet 38.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:49 INFO  Executor:54 - Running task 0.0 in stage 39.0 (TID 39)
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - ShuffleMapStage 38 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 11.902 s
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 39, ShuffleMapStage 40, ShuffleMapStage 41)
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:49 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:49 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/1:0+1736314
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_81_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_66_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_70_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_75_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.1 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_80_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_79_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_78_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_82_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_76_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_72_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_71_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_73_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_77_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_83_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_68_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_67_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_74_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:49 INFO  BlockManagerInfo:54 - Removed broadcast_69_piece0 on 192.168.128.82:53052 in memory (size: 6.9 KB, free: 365.2 MB)
+2019-07-16 18:40:50 INFO  PythonRunner:54 - Times: total = 617, boot = 11, init = 1, finish = 605
+2019-07-16 18:40:50 INFO  Executor:54 - Finished task 0.0 in stage 39.0 (TID 39). 1720 bytes result sent to driver
+2019-07-16 18:40:50 INFO  TaskSetManager:54 - Starting task 0.0 in stage 40.0 (TID 40, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:50 INFO  Executor:54 - Running task 0.0 in stage 40.0 (TID 40)
+2019-07-16 18:40:50 INFO  TaskSetManager:54 - Finished task 0.0 in stage 39.0 (TID 39) in 629 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:50 INFO  TaskSchedulerImpl:54 - Removed TaskSet 39.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - ShuffleMapStage 39 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 12.521 s
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 40, ShuffleMapStage 41)
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:50 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/30:0+538687
+2019-07-16 18:40:50 INFO  PythonRunner:54 - Times: total = 196, boot = -1, init = 4, finish = 193
+2019-07-16 18:40:50 INFO  Executor:54 - Finished task 0.0 in stage 40.0 (TID 40). 1677 bytes result sent to driver
+2019-07-16 18:40:50 INFO  TaskSetManager:54 - Starting task 0.0 in stage 41.0 (TID 41, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:50 INFO  Executor:54 - Running task 0.0 in stage 41.0 (TID 41)
+2019-07-16 18:40:50 INFO  TaskSetManager:54 - Finished task 0.0 in stage 40.0 (TID 40) in 205 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:50 INFO  TaskSchedulerImpl:54 - Removed TaskSet 40.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - ShuffleMapStage 40 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 12.715 s
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44, ShuffleMapStage 41)
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:50 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/25:0+45398
+2019-07-16 18:40:50 INFO  PythonRunner:54 - Times: total = 24, boot = 3, init = 0, finish = 21
+2019-07-16 18:40:50 INFO  Executor:54 - Finished task 0.0 in stage 41.0 (TID 41). 1677 bytes result sent to driver
+2019-07-16 18:40:50 INFO  TaskSetManager:54 - Starting task 0.0 in stage 42.0 (TID 42, localhost, executor driver, partition 0, PROCESS_LOCAL, 7922 bytes)
+2019-07-16 18:40:50 INFO  TaskSetManager:54 - Finished task 0.0 in stage 41.0 (TID 41) in 39 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:50 INFO  Executor:54 - Running task 0.0 in stage 42.0 (TID 42)
+2019-07-16 18:40:50 INFO  TaskSchedulerImpl:54 - Removed TaskSet 41.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - ShuffleMapStage 41 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 12.741 s
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 44)
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:50 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:50 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/9:0+1112583
+2019-07-16 18:40:51 INFO  PythonRunner:54 - Times: total = 428, boot = 16, init = 1, finish = 411
+2019-07-16 18:40:51 INFO  Executor:54 - Finished task 0.0 in stage 42.0 (TID 42). 1677 bytes result sent to driver
+2019-07-16 18:40:51 INFO  TaskSetManager:54 - Starting task 0.0 in stage 43.0 (TID 43, localhost, executor driver, partition 0, PROCESS_LOCAL, 7922 bytes)
+2019-07-16 18:40:51 INFO  TaskSetManager:54 - Finished task 0.0 in stage 42.0 (TID 42) in 438 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:51 INFO  Executor:54 - Running task 0.0 in stage 43.0 (TID 43)
+2019-07-16 18:40:51 INFO  TaskSchedulerImpl:54 - Removed TaskSet 42.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - ShuffleMapStage 42 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 13.133 s
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 43, ShuffleMapStage 44)
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:51 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/6:0+518291
+2019-07-16 18:40:51 INFO  PythonRunner:54 - Times: total = 195, boot = 7, init = 0, finish = 188
+2019-07-16 18:40:51 INFO  Executor:54 - Finished task 0.0 in stage 43.0 (TID 43). 1677 bytes result sent to driver
+2019-07-16 18:40:51 INFO  TaskSetManager:54 - Starting task 0.0 in stage 44.0 (TID 44, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+2019-07-16 18:40:51 INFO  Executor:54 - Running task 0.0 in stage 44.0 (TID 44)
+2019-07-16 18:40:51 INFO  TaskSetManager:54 - Finished task 0.0 in stage 43.0 (TID 43) in 204 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:51 INFO  TaskSchedulerImpl:54 - Removed TaskSet 43.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:51 INFO  HadoopRDD:54 - Input split: file:/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/data/indexing/41:0+572213
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - ShuffleMapStage 43 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 13.330 s
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - running: Set(ShuffleMapStage 44)
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:51 INFO  PythonRunner:54 - Times: total = 221, boot = 6, init = 0, finish = 215
+2019-07-16 18:40:51 INFO  Executor:54 - Finished task 0.0 in stage 44.0 (TID 44). 1677 bytes result sent to driver
+2019-07-16 18:40:51 INFO  TaskSetManager:54 - Finished task 0.0 in stage 44.0 (TID 44) in 229 ms on localhost (executor driver) (1/1)
+2019-07-16 18:40:51 INFO  TaskSchedulerImpl:54 - Removed TaskSet 44.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - ShuffleMapStage 44 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:20) finished in 13.548 s
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - looking for newly runnable stages
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - running: Set()
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 45, ResultStage 46)
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - failed: Set()
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 45 (PairwiseRDD[317] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:39), which has no missing parents
+2019-07-16 18:40:51 INFO  MemoryStore:54 - Block broadcast_90 stored as values in memory (estimated size 135.5 KB, free 354.6 MB)
+2019-07-16 18:40:51 INFO  MemoryStore:54 - Block broadcast_90_piece0 stored as bytes in memory (estimated size 20.4 KB, free 354.6 MB)
+2019-07-16 18:40:51 INFO  BlockManagerInfo:54 - Added broadcast_90_piece0 in memory on 192.168.128.82:53052 (size: 20.4 KB, free: 365.2 MB)
+2019-07-16 18:40:51 INFO  SparkContext:54 - Created broadcast 90 from broadcast at DAGScheduler.scala:1039
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - Submitting 45 missing tasks from ShuffleMapStage 45 (PairwiseRDD[317] at reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:39) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+2019-07-16 18:40:51 INFO  TaskSchedulerImpl:54 - Adding task set 45.0 with 45 tasks
+2019-07-16 18:40:51 INFO  TaskSetManager:54 - Starting task 0.0 in stage 45.0 (TID 45, localhost, executor driver, partition 0, ANY, 7747 bytes)
+2019-07-16 18:40:51 INFO  Executor:54 - Running task 0.0 in stage 45.0 (TID 45)
+2019-07-16 18:40:51 INFO  ShuffleBlockFetcherIterator:54 - Getting 1 non-empty blocks out of 1 blocks
+2019-07-16 18:40:51 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 10 ms
+2019-07-16 18:40:51 INFO  PythonRunner:54 - Times: total = 33, boot = -75, init = 86, finish = 22
+2019-07-16 18:40:51 ERROR Executor:91 - Exception in task 0.0 in stage 45.0 (TID 45)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/worker.py", line 253, in main
+    process()
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/worker.py", line 248, in process
+    serializer.dump_stream(func(split_index, iterator), outfile)
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 2440, in pipeline_func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 2440, in pipeline_func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 350, in func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 1859, in combineLocally
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/shuffle.py", line 237, in mergeValues
+    for k, v in iterator:
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/util.py", line 55, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py", line 38, in <lambda>
+    .map(lambda x: (x[0], [int(x[1])]))\
+ValueError: invalid literal for int() with base 10: 'the'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:330)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRunner.scala:470)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRunner.scala:453)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:284)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1126)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1132)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:408)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:125)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:96)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:53)
+	at org.apache.spark.scheduler.Task.run(Task.scala:109)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:345)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-16 18:40:51 INFO  TaskSetManager:54 - Starting task 1.0 in stage 45.0 (TID 46, localhost, executor driver, partition 1, ANY, 7747 bytes)
+2019-07-16 18:40:51 INFO  Executor:54 - Running task 1.0 in stage 45.0 (TID 46)
+2019-07-16 18:40:51 WARN  TaskSetManager:66 - Lost task 0.0 in stage 45.0 (TID 45, localhost, executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/worker.py", line 253, in main
+    process()
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/worker.py", line 248, in process
+    serializer.dump_stream(func(split_index, iterator), outfile)
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 2440, in pipeline_func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 2440, in pipeline_func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 350, in func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 1859, in combineLocally
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/shuffle.py", line 237, in mergeValues
+    for k, v in iterator:
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/util.py", line 55, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py", line 38, in <lambda>
+    .map(lambda x: (x[0], [int(x[1])]))\
+ValueError: invalid literal for int() with base 10: 'the'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:330)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRunner.scala:470)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRunner.scala:453)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:284)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1126)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1132)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:408)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:125)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:96)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:53)
+	at org.apache.spark.scheduler.Task.run(Task.scala:109)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:345)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-07-16 18:40:51 INFO  ShuffleBlockFetcherIterator:54 - Getting 1 non-empty blocks out of 1 blocks
+2019-07-16 18:40:51 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 0 ms
+2019-07-16 18:40:51 ERROR TaskSetManager:70 - Task 0 in stage 45.0 failed 1 times; aborting job
+2019-07-16 18:40:51 INFO  TaskSchedulerImpl:54 - Cancelling stage 45
+2019-07-16 18:40:51 INFO  Executor:54 - Executor is trying to kill task 1.0 in stage 45.0 (TID 46), reason: Stage cancelled
+2019-07-16 18:40:51 INFO  TaskSchedulerImpl:54 - Stage 45 was cancelled
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - ShuffleMapStage 45 (reduceByKey at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:39) failed in 0.153 s due to Job aborted due to stage failure: Task 0 in stage 45.0 failed 1 times, most recent failure: Lost task 0.0 in stage 45.0 (TID 45, localhost, executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/worker.py", line 253, in main
+    process()
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/worker.py", line 248, in process
+    serializer.dump_stream(func(split_index, iterator), outfile)
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 2440, in pipeline_func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 2440, in pipeline_func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 350, in func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 1859, in combineLocally
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/shuffle.py", line 237, in mergeValues
+    for k, v in iterator:
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/util.py", line 55, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py", line 38, in <lambda>
+    .map(lambda x: (x[0], [int(x[1])]))\
+ValueError: invalid literal for int() with base 10: 'the'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:330)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRunner.scala:470)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRunner.scala:453)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:284)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1126)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1132)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:408)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:125)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:96)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:53)
+	at org.apache.spark.scheduler.Task.run(Task.scala:109)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:345)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Driver stacktrace:
+2019-07-16 18:40:51 INFO  DAGScheduler:54 - Job 0 failed: zipWithIndex at /Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py:42, took 14.522322 s
+2019-07-16 18:40:51 INFO  Executor:54 - Executor killed task 1.0 in stage 45.0 (TID 46), reason: Stage cancelled
+Traceback (most recent call last):
+  File "/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py", line 59, in <module>
+    main(input_folder, output_folder)
+  File "/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py", line 42, in main
+    .map(lambda x: x[0])\
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 2172, in zipWithIndex
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 814, in collect
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 1257, in __call__
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/py4j-0.10.7-src.zip/py4j/protocol.py", line 328, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 45.0 failed 1 times, most recent failure: Lost task 0.0 in stage 45.0 (TID 45, localhost, executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/worker.py", line 253, in main
+    process()
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/worker.py", line 248, in process
+    serializer.dump_stream(func(split_index, iterator), outfile)
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 2440, in pipeline_func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 2440, in pipeline_func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 350, in func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 1859, in combineLocally
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/shuffle.py", line 237, in mergeValues
+    for k, v in iterator:
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/util.py", line 55, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py", line 38, in <lambda>
+    .map(lambda x: (x[0], [int(x[1])]))\
+ValueError: invalid literal for int() with base 10: 'the'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:330)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRunner.scala:470)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRunner.scala:453)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:284)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1126)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1132)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:408)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:125)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:96)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:53)
+	at org.apache.spark.scheduler.Task.run(Task.scala:109)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:345)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1651)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1639)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1638)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1638)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:831)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:831)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:831)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1872)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1821)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1810)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:642)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2034)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2055)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2074)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2099)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:945)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:363)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:944)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:165)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:238)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/worker.py", line 253, in main
+    process()
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/worker.py", line 248, in process
+    serializer.dump_stream(func(split_index, iterator), outfile)
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 2440, in pipeline_func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 2440, in pipeline_func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 350, in func
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/rdd.py", line 1859, in combineLocally
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/shuffle.py", line 237, in mergeValues
+    for k, v in iterator:
+  File "/Users/eddiewu/server/spark-2.3.2-bin-hadoop2.7/python/lib/pyspark.zip/pyspark/util.py", line 55, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/eddiewu/Desktop/InsightDE/coding_challenges/reverted_index/indexing.py", line 38, in <lambda>
+    .map(lambda x: (x[0], [int(x[1])]))\
+ValueError: invalid literal for int() with base 10: 'the'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:330)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRunner.scala:470)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRunner.scala:453)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:284)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1126)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1132)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:408)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:125)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:96)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:53)
+	at org.apache.spark.scheduler.Task.run(Task.scala:109)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:345)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+
+2019-07-16 18:40:51 WARN  TaskSetManager:66 - Lost task 1.0 in stage 45.0 (TID 46, localhost, executor driver): TaskKilled (Stage cancelled)
+2019-07-16 18:40:51 INFO  TaskSchedulerImpl:54 - Removed TaskSet 45.0, whose tasks have all completed, from pool 
+2019-07-16 18:40:51 INFO  SparkContext:54 - Invoking stop() from shutdown hook
+2019-07-16 18:40:51 INFO  AbstractConnector:318 - Stopped Spark@28b7686a{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2019-07-16 18:40:51 INFO  SparkUI:54 - Stopped Spark web UI at http://192.168.128.82:4040
+2019-07-16 18:40:51 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2019-07-16 18:40:51 INFO  MemoryStore:54 - MemoryStore cleared
+2019-07-16 18:40:51 INFO  BlockManager:54 - BlockManager stopped
+2019-07-16 18:40:51 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2019-07-16 18:40:51 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2019-07-16 18:40:51 INFO  SparkContext:54 - Successfully stopped SparkContext
+2019-07-16 18:40:51 INFO  ShutdownHookManager:54 - Shutdown hook called
+2019-07-16 18:40:51 INFO  ShutdownHookManager:54 - Deleting directory /private/var/folders/wp/3xdlkkwx7r1crkk48zym3sdm0000gn/T/spark-deb3bb6b-a131-42cb-8b12-01b1fafe8687/pyspark-f4beb767-be30-4f5d-a38c-cd7745034cdb
+2019-07-16 18:40:51 INFO  ShutdownHookManager:54 - Deleting directory /private/var/folders/wp/3xdlkkwx7r1crkk48zym3sdm0000gn/T/spark-ca1df07b-9938-48c3-adf8-3f7f5a532f3c
+2019-07-16 18:40:51 INFO  ShutdownHookManager:54 - Deleting directory /private/var/folders/wp/3xdlkkwx7r1crkk48zym3sdm0000gn/T/spark-deb3bb6b-a131-42cb-8b12-01b1fafe8687

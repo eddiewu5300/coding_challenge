@@ -15,15 +15,13 @@ class PySparkTestCase(unittest.TestCase):
 
 
 class basicTest(PySparkTestCase):
-    # function that takes a file's body and cleans it by removing punctuation, splitting on spaces, and setting it to lowercase
+
     def normalizeWords(self, text):
         return re.compile(r'\W+', re.UNICODE).split(text.lower())
 
-    # function that sets the filename of a word from that file as that word's value
     def filename_value(self, word_set_file):
         word_set, file = word_set_file
         try:
-            # split the file location, then take the filename from it
             filename = int(file.split("/")[-1])
             tup = ()
             for word in word_set:

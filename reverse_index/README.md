@@ -25,7 +25,7 @@ tion of documents.
 1. Read the documents and collect every pair (wordID, docID)
 2. Sort those pairs by wordID and by docID
 3. For every wordID, group the pairs so you have its list of documents
-4. Merge the intermediate results to get the nal inverted index
+4. Merge the intermediate results to get the inverted index
 
 ![](./img/img.png)
 

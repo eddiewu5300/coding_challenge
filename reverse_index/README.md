@@ -19,3 +19,17 @@ based on dot products that consume a lot of CPU and memory. Having an inverted i
 simplies those dot products.
 We want to write an ecient implementation to build an inverted index of a large collec-
 tion of documents.
+
+## Algorithm
+
+1. Read the documents and collect every pair (wordID, docID)
+2. Sort those pairs by wordID and by docID
+3. For every wordID, group the pairs so you have its list of documents
+4. Merge the intermediate results to get the nal inverted index
+
+![](./img/img.png)
+
+## Run Instruction
+
+`cd reverse_index`
+`spark-sumbit indexing.py`

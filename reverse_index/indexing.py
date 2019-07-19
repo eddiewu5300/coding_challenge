@@ -9,21 +9,26 @@ from pyspark.sql.functions import udf, concat, col, lit
 
 
 def normalizeWords(text):
+    """
+    text preprocessing
+    """
     return re.compile(r'\W+', re.UNICODE).split(text.lower())
 
 
 def text_process(sc, input_folder, file, rdd_list):
+    """
+    input a test file, find out all the distinct word and the rdd to rdd_list
+    """
     input_ = sc.textFile(input_folder+file)
     words = input_.flatMap(normalizeWords)
     word_map = words\
         .map(lambda x: (x, file))\
         .reduceByKey(lambda x, y: x)
-# word, word
     rdd_list.append(word_map)
 
 
 def main(input_folder, output_folder):
-    conf = SparkConf().setMaster("local").setAppName("WordCount")
+    conf = SparkConf()
     sc = SparkContext(conf=conf)
     files = os.listdir(input_folder)
     print('#'*50)
@@ -42,8 +47,6 @@ def main(input_folder, output_folder):
     word_dic = rdds\
         .map(lambda x: x[0])\
         .zipWithIndex()
-
-    # word_dic.saveAsTextFile(output_folder + 'dictionary')
 
     word_dic = word_dic.collectAsMap()
     rdds = rdds\

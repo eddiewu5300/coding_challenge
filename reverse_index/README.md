@@ -31,5 +31,5 @@ tion of documents.
 
 ## Run Instruction
 
-`cd reverse_index`
+`cd reverse_index`  
 `spark-sumbit indexing.py`
